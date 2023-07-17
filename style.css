@@ -1,29 +1,147 @@
-h1 {
-    color: rgb(16, 127, 224);
-    text-shadow: 1px 2px 2px #0000, 0 0 25px #3d3ddd, 0 0 5px #3e20ab00;
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-div.galeria {
-    margin: 10px 20px;
-    box-shadow: 0 4px 8px 0 lightskyblue, 0 6px 20px 0 rgba(0, 0,0, 19);
-    width: 250px;
+body {
+    background: #3c32ce;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
-.div.galeria img {
-    width: 100%;
-    height: auto;
+.contenedor {
+    width: 90%;
+    max-width: 900px;
+    margin: auto;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
 }
 
-.div.galeria:hover {
-    border: 1px solid #13f339d6;
-    transform: rotate(-3deg);
-}
-
-div.pie {
+.tabla {
+    width: 33%;
+    height: 550px;
+    margin: auto;
+    border: 1px solid #090909;
+    border-radius: 4px;
+    box-shadow: 0px 0px 4px 0px #090909;
+    padding: 60px;
     text-align: center;
-    text-shadow: 2px 2px 5px rgb(98, 73, 243);
-    padding: 10px;
+    flex-grow: 1;
+    color: rgb(42, 41, 41);
 }
+
+.tabla>h2 {
+    display: block;
+    font-size: 30px;
+    margin-bottom: 35px;
+}
+
+.tabla img {
+    width: 64px;
+    margin-bottom: 35px;
+}
+
+.tabla>h3 {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.tabla>p {
+    display: block;
+    margin-bottom: 20px;
+}
+
+.boton {
+    display: inline-block;
+    width: 150px;
+    padding: 12px;
+    background: #d9e84f;
+    text-decoration: none;
+    color: #9c8282;
+    border-radius: 100px;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 600;
+    margin: auto;
+}
+
+.tabla:hover {
+    background: #f17108;
+    color: rgb(12, 247, 12);
+    transition: 1 all;
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+@media screen and (max-width: 1000px) {
+    
+    .tabla {
+        width: 45px;
+        max-width: none;
+        margin-bottom: 40px;
+        justify-content: space-between;
+        flex-grow: initial;
+        flex-direction: column;
+    }
+
+    
+}
+
+@media screen and (max-width: 700px) {
+    
+    .tabla {
+        width: 45px;
+       padding: 30px;
+    }
+
+     .tabla> h2 {
+        margin-top: 40px;
+     }
+
+}
+
+@media screen and (max-width: 550px) {
+    
+    .tabla {
+        width: 85%;
+        padding: 20px;
+    
+    }
+
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
